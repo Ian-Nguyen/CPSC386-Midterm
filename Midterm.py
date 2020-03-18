@@ -1,6 +1,8 @@
+#CPSC 386 Coding Portion
+
 import pygame as pg
 
-
+#Ship Class
 class Ship:
     def __init__(self, game, vector=Vector()):
         self.game = game
@@ -52,7 +54,7 @@ class Ship:
         if not fleet.aliens:
             self.game.restart()
 
-
+#Vector Class
 class Vector:
     def __init__(self, x=0.0, y=0.0):
         self.x = x
